@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Ulang Tahun 🎉</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #fff;
+      text-shadow: 0 0 10px #ff8fab, 0 0 20px #ff8fab;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff8fab, 0 0 20px #ff8fab; }
+      to { text-shadow: 0 0 20px #ff4b5c, 0 0 40px #ff4b5c; }
+    }
+
+    p {
+      font-size: 1.5em;
+      color: white;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    button {
+      margin-top: 20px;
+      background: #fff;
+      color: #ff4b5c;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ff4b5c;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 40px;
+      height: 50px;
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: float 6s ease-in infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); }
+      100% { transform: translateY(-110vh) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Selamat Ulang Tahun! 🎂</h1>
+  <p>Semoga hari spesialmu penuh kebahagiaan, cinta, dan tawa 💖</p>
+
+  <button onclick="munculkanBalon()">🎈 Tekan Untuk Merayakan!</button>
+
+  <script>
+    function munculkanBalon() {
+      for (let i = 0; i < 30; i++) {
+        let balloon = document.createElement('div');
+        balloon.classList.add('balloon');
+        balloon.style.background = hsl(${Math.random() * 360}, 100%, 70%);
+        balloon.style.left = Math.random() * 100 + 'vw';
+        balloon.style.animationDuration = 4 + Math.random() * 3 + 's';
+        document.body.appendChild(balloon);
+
+        setTimeout(() => {
+          balloon.remove();
+        }, 7000);
+      }
+
+      alert("🎊 Selamat Ulang Tahun! Semoga Panjang Umur & Bahagia Selalu! 🎊");
+    }
+  </script>
+
+</body>
+</html>
