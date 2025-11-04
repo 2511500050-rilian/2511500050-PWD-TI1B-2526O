@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Judul Halaman</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <header>
+    <h1>Ini Header</h1>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+      &#9776;
+    </button>
+    <nav>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+     <section id="home">
+        <h2>Selamat Datang</h2>
+        <p>Ini contoh Paragraf HTML</p>
+     </section>
+
+     <?php
+     $nama = "Rilian Kusma";
+     $tempat, tanggal_lahir = "Denian, 04 April 2007";
+     ?>
+
+     echo "Nama: $nama <br>";
+     echo "Tempat, Tanggal Lahir: $tempat, tanggal_lahir <br>";
+
+     var_dump($nama);
+     <section id="about">
+  <h2>Tentang Saya</h2>
+  <section id="about">
+  <p>
+    <strong>Nama:</strong> rilian kusma (NIM: 2511500050)
+  </p>
+  <p>
+    <strong>Tempat, Tanggal Lahir:</strong> deniang, 04 april 2007
+  </p>
+  <p>
+    <strong>Status:</strong> Mahasiswa Baru.
+  </p>
+  <p>
+    <strong>Hobi:</strong> mendaki
+  </p>
+  <p>
+    <strong>Ayah:</strong> moch rohendi
+  </p>
+  <p>
+    <strong>Ibu:</strong> sutarni
+  </p>
+  <p>
+    <strong>Saudara:</strong> rannie mercure (kakak perempuan) dan rey surya wijaya, rilham nurafiv (kakak laki laki)
+  </p>
+  <p>
+    <strong>Motto Hidup:</strong> jadilah pribadi yang bermanfaat bagi orang lain
+    </p>
+  <p>
+    <strong>Pasangan:</strong> banyak
+  </p>
+</section>
+</section>
+    <section id="contact">
+  <h2>Kontak Kami</h2>
+  <form action="" method="GET">
+    <label for="txtNama">Nama:</label>
+    <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+
+    <label for="txtEmail">Email:</label>
+    <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+
+    <label for="txtPesan">Pesan:</label>
+    <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
+
+    <button type="submit">Kirim</button>
+    <button type="reset">Batal</button>
+  </form>
+</section>
+    </main>
+    <footer>
+        <p>&copy; 2025 rilian kusma [2511500050]</p>
+    </footer>
+
+     <script src="script.js"></script>
+</body>
+</html> 
