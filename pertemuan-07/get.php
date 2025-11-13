@@ -1,12 +1,14 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
 <?php
   session_start();
  $sesname  = $_SESSION["name"];
  $sesemail = $_SESSION["email"];
  $sespesan = $_SESSION["pesan"];
-
+ 
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -84,6 +86,7 @@
           <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
           <small id="charCount">0/200 karakter</small>
         </label>
+
 
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
